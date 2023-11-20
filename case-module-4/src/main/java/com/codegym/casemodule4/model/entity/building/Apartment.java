@@ -1,9 +1,7 @@
 package com.codegym.casemodule4.model.entity.building;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.codegym.casemodule4.model.entity.person.Landlord;
+import jakarta.persistence.*;
 
 @Entity
 public class Apartment {
@@ -15,5 +13,10 @@ public class Apartment {
     private Long numberOfBedRooms;
     private Long monthlyRent;
     private Integer maxTenants;
-
+    @ManyToOne
+    private Building building;
+    @ManyToOne
+    private Landlord landlord;
 }
+
+
