@@ -12,8 +12,6 @@ public class UserDetailsServiceImpl {
     private final IUserRepository userRepo;
 
     public UserDetails loadUserByUsername(String username) {
-
-//        UserDetails user = new org.springframework.security.core.userdetails.User(username,password,authorities)
         return null;
     }
 }
