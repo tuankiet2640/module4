@@ -41,12 +41,6 @@ public class UserServiceImpl implements UserService {
         }
         userRepository.save(user);
     }
-
-    @Override
-    public Optional<UserDTO> findById(Long id) {
-        return Optional.empty();
-    }
-
     @Override
     public void remove(Long id) {
         userRepository.deleteById(id);
