@@ -2,9 +2,17 @@ package com.codegym.casemodule4.model.entity.building;
 
 import com.codegym.casemodule4.model.entity.person.Landlord;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name= "buildings")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Building {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

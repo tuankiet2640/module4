@@ -1,9 +1,14 @@
 package com.codegym.casemodule4.model.dto.entity;
 
 import com.codegym.casemodule4.model.entity.building.Address;
-import lombok.Data;
+import lombok.*;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+
 public class UserDTO {
     private Integer id;
     private String fullName;

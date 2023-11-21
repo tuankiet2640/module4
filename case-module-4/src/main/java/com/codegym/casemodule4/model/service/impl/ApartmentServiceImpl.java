@@ -27,9 +27,8 @@ public class ApartmentServiceImpl implements ApartmentService {
     public List<ApartmentDTO> getApartments() {
          List<Apartment> apartmentEntities= apartmentRepository.findAll();
         return StreamSupport.stream(apartmentEntities.spliterator(), true)
-                .map(entity -> modelMapper.map(apartmentEntities, ApartmentDTO.class))
+                .map(entity -> modelMapper.map(entity, ApartmentDTO.class))
                 .collect(Collectors.toList());
-
     }
 
     @Override

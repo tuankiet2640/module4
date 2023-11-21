@@ -2,7 +2,7 @@ package com.codegym.casemodule4.model.dto.entity;
 
 import com.codegym.casemodule4.model.entity.building.Building;
 import com.codegym.casemodule4.model.entity.person.Landlord;
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class ApartmentDTO {
